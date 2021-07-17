@@ -1,0 +1,132 @@
+:root {
+	
+	--color__site: #7943A4;
+	--color__site:#C283F3;
+	
+	--color__site: #9D5CD0;
+	--color__site: #D1A9F0;
+	;
+}
+a {
+	color: white;
+}
+@font-face {
+	font-family: "Open Sans";
+	src: url("../fonts/OpenSans-Light.ttf");
+	font-display: swap;
+	font-weight: 200;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Open Sans";
+	src: url("../fonts/OpenSans-Regular.ttf");
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Open Sans";
+	src: url("../fonts/OpenSans-SemiBold.ttf");
+	font-display: swap;
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Open Sans";
+	src: url("../fonts/OpenSans-Bold.ttf");
+	font-display: swap;
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Open Sans";
+	src: url("../fonts/OpenSans-ExtraBold.ttf");
+	font-display: swap;
+	font-weight: 800;
+	font-style: normal;
+}
+
+body {
+	font-size: 16px;
+	font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+.container {
+	max-width: 1680px;
+	padding: 0 40px;
+	margin: 0 auto;
+}
+.header {
+	font-size: 18px;
+	background-image: url(../img/bg/header-bg-1.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+	min-height: 400px;
+}
+.header-top__wrapper {
+	background-color: black;
+	height: 100px;
+}
+.header-top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.menu {
+	max-width: 65%;
+	width: 100%;
+}
+.menu__list {
+	display: flex;
+
+	justify-content: space-between;
+}
+.menu__item {
+	margin: 37px 0;
+}
+.menu__link {
+	padding: 4px 6px;
+	display: block;
+	font-weight: 600;
+}
+.menu__link::first-letter {
+	text-transform: uppercase;
+}
+.header-bottom__wrapper {
+	background-color: rgba(0, 0, 0, 0.57);
+}
+.header-bottom {
+	display: flex;
+	align-items: center;
+	height: 70px;
+}
+.header-bottom__item {
+	margin-right: auto;
+}
+.search {
+	margin-left: auto;
+}
+.title__wrapper {
+	max-width: 580px;
+	align-items: flex-start;
+}
+.header__title {
+	font-weight: 700;
+	font-size: 72px;
+	line-height: 98px;
+}
+.header__text {
+	font-weight: 700;
+
+	line-height: 30px;
+}
+.gallery {
+	background-image: url(../img/bg/gallery-bg.jpg);
+	color: white;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 500px;
+}
