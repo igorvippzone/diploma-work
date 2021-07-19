@@ -1,11 +1,9 @@
 :root {
-	
-	--color__site: #7943A4;
-	--color__site:#C283F3;
-	
-	--color__site: #9D5CD0;
-	--color__site: #D1A9F0;
-	;
+	--color__site: #7943a4;
+	--color__site: #c283f3;
+
+	--color__site: #9d5cd0;
+	--color__site: #d1a9f0;
 }
 a {
 	color: white;
@@ -75,6 +73,7 @@ body {
 	align-items: center;
 }
 .menu {
+	/* margin-right: 140px; */
 	max-width: 65%;
 	width: 100%;
 }
@@ -116,6 +115,8 @@ body {
 	font-weight: 700;
 	font-size: 72px;
 	line-height: 98px;
+	margin-top: 70px;
+	margin-bottom: 10px;
 }
 .header__text {
 	font-weight: 700;
@@ -129,4 +130,64 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	min-height: 500px;
+}
+.gallery__inner {
+	display: flex;
+	padding: 80px 0;
+}
+
+.cards__list {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 50px;
+}
+.cards__item {
+	max-width: 350px;
+	max-height: 350px;
+}
+
+.catalog {
+	padding: 80px 0;
+}
+.catalog__tab-btn {
+	width: 46px;
+	height: 46px;
+	border-radius: 50%;
+
+	position: relative;
+	margin: 0 25px;
+}
+.catalog-1 {
+	background-image: url(../img/catalog/flag/flag-1.png);
+}
+.catalog-2 {
+	background-image: url(../img/catalog/flag/flag-2.png);
+}
+.catalog-3 {
+	background-image: url(../img/catalog/flag/flag-3.png);
+}
+.catalog-4 {
+	background-image: url(../img/catalog/flag/flag-4.png);
+}
+.catalog-5 {
+	background-image: url(../img/catalog/flag/flag-5.png);
+}
+.catalog-6 {
+	background-image: url(../img/catalog/flag/flag-6.png);
+}
+
+.catalog__tab-btn::before {
+	content: "";
+	position: absolute;
+	top: -10px;
+	left: -10px;
+	width: 66px;
+	height: 66px;
+	border-radius: 50%;
+	border: #7943a4 solid 1px;
+	opacity: 0;
+}
+
+.catalog__tab-btn.active::before {
+	opacity: 1;
 }
