@@ -40,8 +40,8 @@
         <li class="header-bottom__item">Авангард</li>
         <li class="header-bottom__item">Футуризм</li>
         <li class="search">
-          <button class="search__btn">лупа</button>
-          <input class="search__input" type="text" value="Поиск по сайту">
+          <button class="search__btn"></button>
+          <input class="search__input" type="text" placeholder="Поиск по сайту">
         </li>
       </ul>
     </div>
@@ -68,9 +68,9 @@
   </section>
   <section class="gallery">
     <div class="gallery__inner container">
-      <aside>
+      <aside class="gallary__text">
         <h2 class="gallary__title">Галерея</h2>
-        <p>Фильтр:</p>
+        <p class="sel__name">Фильтр:</p>
         <select name="select" id="select">select</select>
         <p class="gallary__note">Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a
             class="note__link" href="#">авторизуйтесь,</a> либо
@@ -78,10 +78,10 @@
       </aside>
       <div class="gallary__cards cards">
         <div class="cards__pages">
-          <button class="btn__prev">взад</button>
+          <button class="btn__prev"></button>
 
           <p class="pages">1/2</p>
-          <button class="btn__prev">вперед</button>
+          <button class="btn__next"></button>
         </div>
         <ul class="gallary-cards__list">
           <li class="gallary-cards__item"><img src="img/gallary/gallary-1-1.png" alt=""></li>
@@ -97,14 +97,15 @@
   </section>
 
   <section class="catalog container">
-    <h2 class="catalog__title">Каталог</h2>
-    <button class="catalog__tab-btn catalog-1"></button>
-    <button class="catalog__tab-btn catalog-2"></button>
-    <button class="catalog__tab-btn catalog-3 active"></button>
-    <button class="catalog__tab-btn catalog-4"></button>
-    <button class="catalog__tab-btn catalog-5"></button>
+    <div class="tab-btn__wrapper">
+      <h2 class="catalog__title">Каталог</h2>
+      <button class="catalog__tab-btn catalog-1"></button>
+      <button class="catalog__tab-btn catalog-2"></button>
+      <button class="catalog__tab-btn catalog-3 active"></button>
+      <button class="catalog__tab-btn catalog-4"></button>
+      <button class="catalog__tab-btn catalog-5"></button>
 
-
+    </div>
     <div class="catalog__tabs tabs">
       <ul class="tabs__list">
         <li class="tabs__item">
@@ -243,10 +244,10 @@
       </aside>
       <div class="edition__content">
         <div class="cards__pages">
-          <button class="btn__prev">взад</button>
+          <button class="btn__prev"></button>
 
           <p class="pages">1/2</p>
-          <button class="btn__prev">вперед</button>
+          <button class="btn__next"></button>
         </div>
         <ul class="edition-cards__list">
           <li class="edition-cards__item">
@@ -358,14 +359,15 @@
       </div>
     </div>
   </section>
-  <!-- 
-  <h1>Igor</h1>
+
   <section class="contacts__wrapper">
 
     <h2 class="contacts__title container">Контакты</h2>
+
     <div class="contacts">
-      <div class="container">
-        <div class="contacts__content">
+
+      <div class="contacts__content">
+        <div class="form__wrapper">
           <h3 class="contacts__subtitle">Шоурум №4</h3>
           <p class="subhead">Леонтьевский переулок, дом 5/1</p>
           <form action="https://echo.htmlacademy.ru" method="post" class="form-callback">
@@ -376,12 +378,12 @@
 
 
         </div>
-        <div class="two">карта</div>
+
+
       </div>
-    </div>
-    <h1>Nekit</h1>
+      <div class="contacts__map">карта</div>
   </section>
-  <section class="test">
+  <!--   <section class="test">
     <div class="contain">
       <div class="forms">
         <h3 class="contacts__subtitle">Шоурум №4</h3>
