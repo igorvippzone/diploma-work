@@ -1,8 +1,16 @@
 <svg width="185" height="81" viewBox="0 0 185 81" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="185" height="81">
 <rect width="185" height="81" fill="url(#pattern0)"/>
+</mask>
+<g mask="url(#mask0)">
+<rect width="185" height="81" fill="url(#pattern1)"/>
 <rect width="185" height="81" fill="url(#paint0_linear)"/>
+</g>
 <defs>
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0" transform="translate(0 -0.00122898) scale(0.00452489 0.0103346)"/>
+</pattern>
+<pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0" transform="translate(0 -0.00122898) scale(0.00452489 0.0103346)"/>
 </pattern>
 <linearGradient id="paint0_linear" x1="195" y1="81" x2="-12.5" y2="81" gradientUnits="userSpaceOnUse">

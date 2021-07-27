@@ -220,9 +220,11 @@
               <div class="accordion__content">
                 <div class="accordion__none">
                   <div class="none__rectangle"></div>
-                  <h4 class="accordion__subtitle">Здесь пока пусто</h4>
-                  <p>А в галерее вы всегда можете найти что-то интересное для себя</p>
-                  <a href="#">В галерею</a>
+                  <div class="none__content">
+                    <h4 class="none__subtitle">Здесь пока пусто</h4>
+                    <p class="none__text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                    <a class="none__link" href="#">В галерею</a>
+                  </div>
                 </div>
               </div>
 
@@ -352,26 +354,62 @@
         <form class="edition__form filter" action="https://echo.htmlacademy.ru" method="post">
           <p class="filter__title">Категории</p>
           <ul class="filter__categories">
-            <li class="categories__item"><label for><input type="checkbox" name="Бестселлеры">Бестселлеры</label></li>
-            <li class="categories__item"><label for><input type="checkbox" name="Исскуство">Исскуство</label></li>
-            <li class="categories__item"><label for><input type="checkbox" name="Архитектура">Архитектура</label></li>
-            <li class="categories__item"><label for><input type="checkbox" name="Бестселлеры">Бестселлеры</label></li>
-            <li class="categories__item"><label for><input type="checkbox" name="Исскуство">Исскуство</label></li>
-            <li class="categories__item"><label for><input type="checkbox" name="Архитектура">Архитектура</label></li>
-            <li class="categories__item"><label for><input type="checkbox" name="Бестселлеры">Бестселлеры</label></li>
-            <li class="categories__item"><label for><input type="checkbox" name="Исскуство">Исскуство</label></li>
-            <li class="categories__item"><label for><input type="checkbox" name="Архитектура">Архитектура</label></li>
-            <li class="categories__item"><label for><input type="checkbox" name="Бестселлеры">Бестселлеры</label></li>
-            <li class="categories__item"><label for><input type="checkbox" name="Исскуство">Исскуство</label></li>
-            <li class="categories__item"><label for><input type="checkbox" name="Архитектура">Архитектура</label></li>
+            <li class="categories__item"><label> <input class="categories__check" type="checkbox"
+                  name="Бестселлеры"><span class="custom__checkbox"></span>
+                <p>Бестселлеры</p>
+              </label></li>
+            <li class="categories__item"><label><input class="categories__check" type="checkbox" name="Исскуство"><span
+                  class="custom__checkbox"></span>
+                <p>Исскуство</p>
+              </label></li>
+            <li class="categories__item"><label><input class="categories__check" type="checkbox"
+                  name="Архитектура"><span class="custom__checkbox"></span>
+                <p> Архитектура</p>
+              </label></li>
+            <li class="categories__item"><label><input class="categories__check" type="checkbox"
+                  name="Бестселлеры"><span class="custom__checkbox"></span>
+                <p> Бестселлеры</p>
+              </label></li>
+            <li class="categories__item"><label><input class="categories__check" type="checkbox" name="Исскуство"><span
+                  class="custom__checkbox"></span>
+                <p>Исскуство</p>
+              </label></li>
+            <li class="categories__item"><label><input class="categories__check" type="checkbox"
+                  name="Архитектура"><span class="custom__checkbox"></span>
+                <p> Архитектура</p>
+              </label></li>
+            <li class="categories__item"><label><input class="categories__check" type="checkbox"
+                  name="Бестселлеры"><span class="custom__checkbox"></span>
+                <p>Бестселлеры</p>
+              </label></li>
+            <li class="categories__item"><label><input class="categories__check" type="checkbox" name="Исскуство"><span
+                  class="custom__checkbox"></span>
+                <p>Исскуство</p>
+              </label></li>
+            <li class="categories__item"><label><input class="categories__check" type="checkbox"
+                  name="Архитектура"><span class="custom__checkbox"></span>
+                <p>Архитектура</p>
+              </label></li>
+            <li class="categories__item"><label><input class="categories__check" type="checkbox"
+                  name="Бестселлеры"><span class="custom__checkbox"></span>
+                <p>Бестселлеры</p>
+              </label></li>
+            <li class="categories__item"><label><input class="categories__check" type="checkbox" name="Исскуство"><span
+                  class="custom__checkbox"></span>
+                <p>Исскуство</p>
+              </label></li>
+            <li class="categories__item"><label><input class="categories__check" type="checkbox"
+                  name="Архитектура"><span class="custom__checkbox"></span>
+                <p>Архитектура</p>
+              </label></li>
 
           </ul>
           <p class="filter__title">Цена</p>
           <div class="filter-interval">
-            <label>от <input type="text" name="min-interval" value="50"></label>
-            <label>до <input type="text" name="max-interval" value="25000"> руб.</label>
+            <label>От</label><input type="text" name="min-interval" value="50">
+            <label>до</label><input type="text" name="max-interval" value="25000"><span>руб.</span>
           </div>
-          <button>кнопка</button>
+          <!-- <button>кнопка</button> -->
 
         </form>
         <label class="" for="categories"></label>
@@ -380,79 +418,79 @@
         <div class="cards__pages">
           <button class="btn__prev"></button>
 
-          <p class="pages">1/2</p>
+          <p class="pages">1/3</p>
           <button class="btn__next"></button>
         </div>
         <ul class="edition-cards__list">
           <li class="edition-cards__item">
             <figure class="edition__img">
               <img src="img/edition/edition-1.jpg" alt="">
-              <figcaption>
+              <figcaption class="edition__img-text">
                 <span class="img__name">Искусство цвета <span class="img__autor">Иттен, Иоханнес</span></span>
                 <span class="img__price">620 руб</span>
               </figcaption>
             </figure>
-            <a class="edition-cards__btn btn" href="#">Купить</a>
+            <a class="edition-cards__btn btn" href="#">Заказать</a>
           </li>
           <li class="edition-cards__item">
             <figure class="edition__img">
               <img src="img/edition/edition-2.jpg" alt="">
-              <figcaption>
+              <figcaption class="edition__img-text">
                 <span class="img__name">Искусство цвета <span class="img__autor">Иттен, Иоханнес</span></span>
                 <span class="img__price">620 руб</span>
               </figcaption>
             </figure>
-            <a class="edition-cards__btn" href="#">Купить</a>
+            <a class="edition-cards__btn btn" href="#">Заказать</a>
           </li>
           <li class="edition-cards__item">
             <figure class="edition__img">
               <img src="img/edition/edition-3.jpg" alt="">
-              <figcaption>
+              <figcaption class="edition__img-text">
                 <span class="img__name">Искусство цвета <span class="img__autor">Иттен, Иоханнес</span></span>
                 <span class="img__price">620 руб</span>
               </figcaption>
             </figure>
-            <a class="edition-cards__btn" href="#">Купить</a>
+            <a class="edition-cards__btn btn" href="#">Заказать</a>
           </li>
           <!-- <li class="edition-cards__item">
             <figure class="edition__img">
               <img src="img/edition/edition-4.jpg" alt="">
-              <figcaption>
+              <figcaption class="edition__img-text">
                 <span class="img__name">Искусство цвета <span class="img__autor">Иттен, Иоханнес</span></span>
                 <span class="img__price">620 руб</span>
               </figcaption>
             </figure>
-            <a class="edition-cards__btn" href="#">Купить</a>
+            <a class="edition-cards__btn btn" href="#">Заказать</a>
           </li>
           <li class="edition-cards__item">
             <figure class="edition__img">
               <img src="img/edition/edition-5.jpg" alt="">
-              <figcaption>
+             <figcaption class="edition__img-text">
                 <span class="img__name">Искусство цвета <span class="img__autor">Иттен, Иоханнес</span></span>
                 <span class="img__price">620 руб</span>
               </figcaption>
             </figure>
-            <a class="edition-cards__btn" href="#">Купить</a>
+            <a class="edition-cards__btn btn" href="#">Заказать</a>
           </li>
           <li class="edition-cards__item">
             <figure class="edition__img">
               <img src="img/edition/edition-6.jpg" alt="">
-              <figcaption>
+         <figcaption class="edition__img-text">
                 <span class="img__name">Искусство цвета <span class="img__autor">Иттен, Иоханнес</span></span>
                 <span class="img__price">620 руб</span>
               </figcaption>
             </figure>
-            <a class="edition-cards__btn" href="#">Купить</a>
+            <a class="edition-cards__btn btn" href="#">Заказать</a>
           </li>
           <li class="edition-cards__item">
             <figure class="edition__img">
               <img src="img/edition/edition-7.jpg" alt="">
-              <figcaption>
+              <figcaption class="edition__img-text">
                 <span class="img__name">Искусство цвета <span class="img__autor">Иттен, Иоханнес</span></span>
                 <span class="img__price">620 руб</span>
               </figcaption>
             </figure>
-            <a class="edition-cards__btn" href="#">Купить</a>
+            <a class="edition-cards__btn btn" href="#">Заказать</a>
           </li> -->
         </ul>
       </div>
@@ -462,16 +500,19 @@
 
   <section class="projects container">
     <h2 class="projects__title">Проекты</h2>
-    <p>Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно
+    <p class="projects__text">Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей
+      деятельности однозначно
       фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не
       уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде
-      всего, постоянное информационно-пропагандистское<span class="info"><span>Пример современных тенденций -
+      всего, постоянное информационно-пропагандистское<span class="info"><span class="hover">Пример современных
+          тенденций -
           современная методология разработки </span></span>
       обеспечение нашей деятельности однозначно фиксирует необходимость
       экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей оппозиции могут
-      быть рассмотрены<span class="info"><span>Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы
+      быть рассмотрены<span class="info"><span class="hover">Приятно, граждане, наблюдать, как сделанные на базе
+          аналитики выводы
           вызывают у вас эмоции </span></span> исключительно в разрезе маркетинговых и финансовых<span
-        class="info"><span>В стремлении повысить качество </span></span> предпосылок.
+        class="info"><span class="hover">В стремлении повысить качество </span></span> предпосылок.
       Банальные, но неопровержимые
       выводы, а также представители современных социальных резервов призывают нас к новым свершениям, которые, в свою
       очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости. Подробнее:
@@ -480,19 +521,26 @@
     <div class="partners">
       <h3 class="partners__title">Партёры проектов:</h3>
       <div class="partners__slider">
-        <button>взад</button>
+        <button class="btn__prev"></button>
         <ul class="partners__list">
           <li class="partners__item"> <a class="partners__link" href="#">
-              <img src="img/progects/1 933.svg" alt="">
+              <img src="img/progects/partners-1.svg" alt="">
             </a>
           </li>
-          <li class="partners__item"><img src="img/progects/1 933.svg" alt=""></li>
-          <li class="partners__item"><img src="img/progects/1 933.svg" alt=""></li>
+          <li class="partners__item"> <a class="partners__link" href="#">
+              <img src="img/progects/partners-2.svg" alt="">
+            </a>
+          </li>
+          <li class="partners__item"> <a class="partners__link" href="#">
+              <img src="img/progects/partners-3.svg" alt="">
+            </a>
+          </li>
         </ul>
-        <button class="">вперед</button>
+        <button class="btn__next"></button>
       </div>
     </div>
   </section>
+
 
   <section class="contacts__wrapper">
 
@@ -505,32 +553,27 @@
           <h3 class="contacts__subtitle">Шоурум №4</h3>
           <p class="subhead">Леонтьевский переулок, дом 5/1</p>
           <form action="https://echo.htmlacademy.ru" method="post" class="form-callback">
-            <input class="callback__name" type="text" name="name">
-            <input class="callback__tel" type="tel" name="phone"><br><br><br><br>
-            <button class="">Заказать</button>
+            <h4 class="callback__title">Заказать обратный звонок</h4>
+            <input class="callback__name" placeholder="Имя*" type="text" name="name">
+            <input class="callback__tel" placeholder="Телефон*" type="tel" name="phone">
+            <button class="callback__btn btn">Заказать</button>
           </form>
-
-
+          <p class="callback__messengers-title">Связаться в один клик</p>
+          <div class="callback__messengers">
+            <a class="whatsapp" href="#"></a><a class="telegramm" href="#"></a>
+          </div>
         </div>
 
 
       </div>
-      <div class="contacts__map">карта</div>
-  </section>
-  <!--   <section class="test">
-    <div class="contain">
-      <div class="forms">
-        <h3 class="contacts__subtitle">Шоурум №4</h3>
-        <p class="subhead">Леонтьевский переулок, дом 5/1</p>
-        <form action="https://echo.htmlacademy.ru" method="post" class="form-callback">
-          <input class="callback__name" type="text" name="name">
-          <input class="callback__tel" type="tel" name="phone"><br><br><br><br>
-          <button>Заказать</button>
-        </form>
+      <div class="contacts__map">
+        <div class="ymap">
+          <div id="yandexmap"></div>
+        </div>
       </div>
     </div>
-    <div class="map">карта</div>
-  </section> -->
+  </section>
+
 
   <footer class="footer">
     <div class="footer__inner container">
@@ -566,6 +609,8 @@
       </ul>
     </div>
   </footer>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <script src="js/map.js"></script>
 </body>
 
 </html>
